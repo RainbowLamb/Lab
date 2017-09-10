@@ -8,10 +8,10 @@ int main()
 	float input, c, f, k;
 	char scale;
 	printf("Enter input and scale:\n");
-	scanf_s("%f ", &input); // ввод температуры в виде числа с плавающей точкой
-	scanf_s("%c", &scale);	// ввод шкалы в виде одного символа
+	scanf_s("%f ", &input); 
+	scanf_s("%c", &scale);	
 	switch (scale) {
-		case 'C':							// если введена температура в Цельсиях 
+		case 'C':							
 			f = input * 9 / 5 + 32;
 			k = input + 273.15;
 			printf("%.2f", input);
@@ -21,7 +21,7 @@ int main()
 			printf("%.2f", k);
 			printf(" K\n");
 			break;
-		case 'F':							// если введена температура в Фаренгейтах 
+		case 'F':							
 			c = (input - 32) * 5 / 9;
 			k = (input - 32) * 5 / 9 + 273, 15;
 			printf("%.2f", input);
@@ -31,7 +31,7 @@ int main()
 			printf("%.2f", k);
 			printf(" K\n");
 			break;
-		case 'K':							// если введена температура в Кельвинах
+		case 'K':							
 			c = input - 273.15;
 			f = (input - 273.15) * 9 / 5 + 32;
 			printf("%.2f", input);
@@ -41,7 +41,7 @@ int main()
 			printf("%.2f", f);
 			printf(" F\n");
 			break;
-		default:						// если у вас кривые руки, раз вы не смогли ввести все правильно
+		default:						
 			printf("Incorrect input.\n");
 	}
 
