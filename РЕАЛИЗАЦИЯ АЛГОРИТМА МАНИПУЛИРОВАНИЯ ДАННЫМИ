@@ -3,9 +3,9 @@
 
 int main()
 { 
-    /*m - stroki 
+    /* m - stroki 
     n - stolbci
-    part 1*/
+    part 1 */
     int m, n;
     printf("enter massive size\n");
     scanf("%d%d", &m, &n);
@@ -26,7 +26,7 @@ int main()
     if (m<3, n<4)
         printf("Error");
     
-    /*part 2*/
+    /* part 2 */
     for (j=0; j<n; j++) 
         {
         int ch = massive [0][j];
