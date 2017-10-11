@@ -45,8 +45,6 @@ int main ()
 
              default:
              return 0;
-
-
          }
 
          fflush (stdin); /*буфер*/
