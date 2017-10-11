@@ -5,10 +5,10 @@
 struct stack
 {
    int stk[MAXSIZE];
-   int top;
+   int boop;
 };
 typedef struct stack STACK;
-STACK s;
+STACK st;
 
 void push(void);
 int pop(void);
@@ -18,7 +18,7 @@ int main ()
 {
    int choice;
    int option = 1;
-   s.top = -1;
+   st.boop = -1;
 
    printf ("STACK OPERATION\n"); /*менюшка*/
    while (option)
@@ -58,7 +58,7 @@ return 0;
 void push () /*добавление*/
 {
    int num;
-   if (s.top == (MAXSIZE - 1))
+   if (st.boop == (MAXSIZE - 1))
    {
       printf ("Stack is Full\n");
       return;
@@ -67,8 +67,8 @@ else
 {
    printf ("Enter the element to be pushed\n");
    scanf ("%d", &num);
-   s.top = s.top + 1;
-   s.stk[s.top] = num;
+   st.boop = st.boop + 1;
+   st.stk[st.boop] = num;
 }
 return;
 }
@@ -76,16 +76,16 @@ return;
 int pop () /*вывод*/
 {
    int num;
-   if (s.top == - 1)
+   if (st.boop == - 1)
    {
       printf ("Stack is Empty\n");
-      return (s.top);
+      return (st.boop);
    }
 else
 {
-   num = s.stk[s.top];
-   printf ("Poped element is = %d\n", s.stk[s.top]);
-   s.top = s.top - 1;
+   num = st.stk[st.boop];
+   printf ("Poped element is = %d\n", st.stk[st.boop]);
+   st.boop = st.boop - 1;
 }
 return(num);
 }
@@ -93,7 +93,7 @@ return(num);
 void display () /*показать*/
 {
    int i;
-   if (s.top == -1)
+   if (st.boop == -1)
    {
       printf ("Stack is empty\n");
       return;
@@ -101,9 +101,9 @@ void display () /*показать*/
 else
 {
    printf ("\n The status of the stack is \n");
-   for (i = s.top; i >= 0; i--)
+   for (i = st.boop; i >= 0; i--)
    {
-      printf ("%d", s.stk[i]);
+      printf ("%d", st.stk[i]);
    }
 }
 printf ("\n");
