@@ -73,7 +73,7 @@ int main()
              xi=1;
              xj=1;
              newmas[i][j]=massive[i+xi][j+xj];
-             printf("%4d ", newmas[i][j]);
+             printf("%d\t ", newmas[i][j]);
           }
           printf("\n");
        }
@@ -85,3 +85,4 @@ int main()
     
     
     return 0;
+}
