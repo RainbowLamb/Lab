@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define MAXSIZE 5
+#define MAXSIZE 15
 
 struct stack
 {
