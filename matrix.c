@@ -49,8 +49,6 @@ int main()
 
     }
 
-
-
     printf("\n   \n");
 
     for ( i = 0; i < m; i++) {
@@ -59,14 +57,11 @@ int main()
         }
         printf("\n");
     }
-
-
     getchar();
-    
-    
-     /*Part 3*/
-for(j=0;j<n;j++) 
-{
+        
+   /*Part 3*/
+   for(j=0;j<n;j++) 
+   {
       printf ("\n Deleting\n\n");
       int newmas[m-1][n-1]; /*new massive*/
       int xi=0;
@@ -81,8 +76,8 @@ for(j=0;j<n;j++)
              printf("%4d ", newmas[i][j]);
           }
           printf("\n");
-      }
-}
+       }
+   }
     printf("\n");
  
  /*Part 4*/
