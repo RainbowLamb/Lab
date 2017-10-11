@@ -6,7 +6,7 @@ struct stack
 {
    int stk[MAXSIZE];
    int top;
-}
+};
 typedef struct stack STACK;
 STACK s;
 
@@ -23,10 +23,10 @@ int main ()
    printf ("STACK OPERATION\n"); /*менюшка*/
    while (option)
    {
-      printf (" 1 PUSH \n"); /*добавить число*/
-      printf (" 2 POP \n"); /*вывод*/
-      printf (" 3 DISPLAY \n"); /*показать весь стек*/
-      printf (" 4 EXIT \n"); 
+      printf (" 1 Push \n"); /*добавить число*/
+      printf (" 2 Pop \n"); /*вывод*/
+      printf (" 3 Display \n"); /*показать весь стек*/
+      printf (" 4 Exit \n"); 
 
       printf ("Enter your choice\n");
       scanf ("%d", &choice);
