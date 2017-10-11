@@ -6,7 +6,7 @@ struct stack
 {
    int stk[MAXSIZE];
    int top;
-};
+}
 typedef struct stack STACK;
 STACK s;
 
