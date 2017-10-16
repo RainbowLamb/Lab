@@ -3,8 +3,8 @@
 
 int main()
 { 
-    /* m - stroki 
-    n - stolbci
+    /* m - lines 
+    n - columns
     part 1 */
     int m, n;
     printf("enter massive size\n");
