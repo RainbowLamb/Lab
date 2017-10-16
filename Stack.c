@@ -20,13 +20,13 @@ int main ()
    int option=1;
    st.boop=-1;
 
-   printf ("STACK OPERATION\n"); /*менюшка*/
+   printf ("STACK OPERATION\n"); /*menu*/
    while (option)
    {
       printf ("__________________________\n");
-      printf (" 1 Push \n"); /*добавить число*/
-      printf (" 2 Pop \n"); /*вывод*/
-      printf (" 3 Display \n"); /*показать весь стек*/
+      printf (" 1 Push \n"); /*add number*/
+      printf (" 2 Pop \n"); /*deduction*/
+      printf (" 3 Display \n"); /*show the whole stack*/
       printf (" 4 Exit \n"); 
 
       printf ("Enter your choice\n");
@@ -52,7 +52,7 @@ int main ()
 return 0;
 }
 
-void push () /*добавление*/
+void push () /*add number*/
 {
    int num;
    if (st.boop==(MAXSIZE - 1))
@@ -70,7 +70,7 @@ else
 return;
 }
 
-int pop () /*вывод*/
+int pop () /*deduction*/
 {
    int num;
    if (st.boop==- 1)
@@ -87,7 +87,7 @@ else
 return(num);
 }
 
-void display () /*показать*/
+void display () /*show the whole stack*/
 {
    int i;
    if (st.boop==-1)
