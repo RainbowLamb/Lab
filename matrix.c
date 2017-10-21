@@ -15,9 +15,7 @@
     /*Part 1 Random matrix*/
 
     int m, n;
-	 /* m - lines 
-    n - columns
-    part 1 */
+	 /* m - lines; n - columns*/
     srand(time(NULL));
     n = rand() % (MAXCOLUMNS-MINCOLUMNS+1) + MINCOLUMNS; 
     m = rand()%(MAXLINES-MINLINES+1) + MINLINES; 
@@ -32,6 +30,7 @@
         printf("\n");
     }
     
+	  
     /* part 2 Switch lines*/
     printf ("\n Switching\n");
       for( j = 0; j < n; j++) 
@@ -40,7 +39,6 @@
         massive[0][j] = massive[m - 1][j];
         massive[m - 1][j] = ch;
     }
-
     for ( i = 0; i < n/2; i++)
 	 {
         int ch;
@@ -51,11 +49,9 @@
         ch = massive[m - 1][i];
         massive[m - 1][i] = massive[m - 1][n - 1 - i];
         massive[m - 1][n - 1 - i] = ch;
-
     }
-
     printf("\n   \n");
-
+	  
     for ( i = 0; i < m; i++) 
 	{
         for (j = 0; j < n; j++)
@@ -65,6 +61,7 @@
         printf("\n"); 
     }
 
+	  
      /*Part 3 Deleting*/
         for(j=0;j<n;j++) 
 		{
