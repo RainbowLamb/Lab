@@ -7,8 +7,8 @@ int main(int argc, char *argv[])
 	float input, c, f, k;
 	char scale;
 	printf("Enter input and scale:\n");
-	scanf_s("%f ", &input); 
-	scanf_s("%c", &scale);	
+	scanf("%f ", &input); 
+	scanf("%c", &scale);	
 	switch (scale) {
 		case 'C':		/*enter degrees Celsius*/					
 			f = input * 9 / 5 + 32;
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 			break;
 		case 'F':		/*enter degrees Fahrenheit*/					
 			c = (input - 32) * 5 / 9;
-			k = (input - 32) * 5 / 9 + 273, 15;
+			k = (input - 32) * 5 / 9 + 273.15;
 			printf("%.2f", input);
 			printf(" F:\n");
 			printf("%.2f", c);
