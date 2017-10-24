@@ -90,7 +90,7 @@
     scanf("%d%d", &m, &n);
     printf ("\n");
     int new_massive[m][n];
-    if (m>=3, n>=4);
+    if (m>=3 && n>=4);
     {
     printf ("\n Massive\n\n");
         for (i=0; i<n; i++)
@@ -103,7 +103,7 @@
             printf("\n");
         }
     }
-    if (m<3, n<4)
+    if (m<3 && n<4)
         printf("Error");
         
         
